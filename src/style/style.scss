@@ -1,0 +1,13 @@
+@import './main-page.scss';
+@import './posts.scss';
+@import './render-messege.scss';
+@import '../components/sign-in/sign-in.scss';
+@import '../components/sign-up/sign-up.scss';
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}

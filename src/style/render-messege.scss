@@ -1,0 +1,33 @@
+.view_messege_wrapper {
+  margin: 20px auto;
+  width: 30%;
+  border-radius: 10px;
+
+  .messegeWrapper {
+    margin: 20px auto;
+    width: 90%;
+    border: 1px inset;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 5px;
+
+    &__title {
+      color: red;
+      letter-spacing: 2px;
+      font-family: cursive;
+    }
+
+    &__messeges {
+      padding-left: 10px;
+      align-self: flex-start;
+    }
+
+    .profile {
+      display: flex;
+      justify-content: space-between;
+      align-content: center;
+      font-size: 0.6em;
+      margin-top: 10px;
+    }
+  }
+}
