@@ -2,6 +2,7 @@ import { v4 as uuidv4 } from 'uuid';
 import moment from 'moment';
 
 import { getMessege, postMessege } from '../api/api-handlers';
+import { getEmail } from '../shared/ls-services/ls-services';
 
 export const rerenderMainPage = () => {
   getMessege()
@@ -66,4 +67,12 @@ export const messegeFormHandler = () => {
       })
       .then(() => rerenderMainPage())
   })
+};
+
+
+export const renderUserEmail = () => {
+  const renderTag = document.getElementById('userEmail');
+  const userEmail = getEmail();
+
+  renderTag.innerHTML = userEmail
 };

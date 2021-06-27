@@ -1,7 +1,7 @@
 import { logout } from './components/logout/logout';
 import { signInHandlers } from './components/sign-in/sign-in';
 import { signUpHandlers } from './components/sign-up/sign-up';
-import { messegeFormHandler, rerenderMainPage } from './dom-handlers/rednder';
+import { messegeFormHandler, renderUserEmail, rerenderMainPage } from './dom-handlers/rednder';
 import { paths, routs } from './shared/constants/routes';
 import { getToken } from './shared/ls-services/ls-services';
 import './style/style.scss';
@@ -18,6 +18,7 @@ window.onload = () => {
         window.location.href = routs.sign_in
       } else {
         messegeFormHandler();
+        renderUserEmail();
         rerenderMainPage();
         logout();
       }
